@@ -11,11 +11,18 @@
     </div>
 
     <!-- Error State -->
-    <div v-else-if="error" class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-6">
+    <div
+      v-else-if="error"
+      class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-6"
+    >
       <div class="flex">
         <div class="flex-shrink-0">
           <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+              clip-rule="evenodd"
+            />
           </svg>
         </div>
         <div class="ml-3">
@@ -32,14 +39,28 @@
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              <div
+                class="w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-blue-600 dark:text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
                 </svg>
               </div>
             </div>
             <div class="ml-4">
-              <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ skills.length }}</p>
+              <p class="text-2xl font-semibold text-gray-900 dark:text-white">
+                {{ skills.length }}
+              </p>
               <p class="text-sm text-gray-600 dark:text-gray-400">Total Skills</p>
             </div>
           </div>
@@ -48,14 +69,28 @@
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <div class="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div
+                class="w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-green-600 dark:text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
             </div>
             <div class="ml-4">
-              <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ enabledSkills }}</p>
+              <p class="text-2xl font-semibold text-gray-900 dark:text-white">
+                {{ enabledSkills }}
+              </p>
               <p class="text-sm text-gray-600 dark:text-gray-400">Enabled</p>
             </div>
           </div>
@@ -64,14 +99,28 @@
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <div class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div
+                class="w-8 h-8 bg-red-100 dark:bg-red-900/30 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-red-600 dark:text-red-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
             </div>
             <div class="ml-4">
-              <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ skillsWithErrors }}</p>
+              <p class="text-2xl font-semibold text-gray-900 dark:text-white">
+                {{ skillsWithErrors }}
+              </p>
               <p class="text-sm text-gray-600 dark:text-gray-400">With Errors</p>
             </div>
           </div>
@@ -80,9 +129,21 @@
         <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center">
-                <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <div
+                class="w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 text-purple-600 dark:text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
                 </svg>
               </div>
             </div>
@@ -116,7 +177,7 @@
                       'bg-green-400': skill.status.healthy && skill.config.enabled,
                       'bg-yellow-400': !skill.config.enabled,
                       'bg-red-400': skill.status.healthy === false,
-                      'bg-gray-400': skill.status.state === 'loading'
+                      'bg-gray-400': skill.status.state === 'loading',
                     }"
                   ></div>
                 </div>
@@ -127,7 +188,9 @@
                     <p class="text-sm font-medium text-gray-900 dark:text-white truncate">
                       {{ skill.manifest.name }}
                     </p>
-                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300">
+                    <span
+                      class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300"
+                    >
                       v{{ skill.manifest.version }}
                     </span>
                     <span
@@ -151,7 +214,7 @@
                 >
                   {{ skill.error_count }} errors
                 </span>
-                
+
                 <button
                   v-if="skill.config.enabled"
                   @click.stop="disableSkill(skill.manifest.id)"
@@ -193,20 +256,22 @@ const selectedSkill = ref(null)
 const loading = ref(true)
 const error = ref(null)
 
-const enabledSkills = computed(() => skills.value.filter(s => s.config.enabled).length)
-const skillsWithErrors = computed(() => skills.value.filter(s => s.error_count > 0).length)
-const totalUsage = computed(() => skills.value.reduce((sum, s) => sum + (s.status.usage_count || 0), 0))
+const enabledSkills = computed(() => skills.value.filter((s) => s.config.enabled).length)
+const skillsWithErrors = computed(() => skills.value.filter((s) => s.error_count > 0).length)
+const totalUsage = computed(() =>
+  skills.value.reduce((sum, s) => sum + (s.status.usage_count || 0), 0)
+)
 
 const loadSkills = async () => {
   try {
     loading.value = true
     error.value = null
-    
+
     const response = await fetch('/api/skills')
     if (!response.ok) {
       throw new Error(`Failed to load skills: ${response.status}`)
     }
-    
+
     const data = await response.json()
     skills.value = data.skills || []
   } catch (err) {
@@ -226,15 +291,15 @@ const enableSkill = async (skillId) => {
     const response = await fetch(`/api/skills/${skillId}/enable`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: '{}'
+      body: '{}',
     })
-    
+
     if (!response.ok) {
       throw new Error(`Failed to enable skill: ${response.status}`)
     }
-    
+
     // Refresh the skills list
     await loadSkills()
   } catch (err) {
@@ -248,15 +313,15 @@ const disableSkill = async (skillId) => {
     const response = await fetch(`/api/skills/${skillId}/disable`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: '{}'
+      body: '{}',
     })
-    
+
     if (!response.ok) {
       throw new Error(`Failed to disable skill: ${response.status}`)
     }
-    
+
     // Refresh the skills list
     await loadSkills()
   } catch (err) {
